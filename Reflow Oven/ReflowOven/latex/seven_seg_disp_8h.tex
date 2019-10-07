@@ -1,0 +1,68 @@
+\hypertarget{seven_seg_disp_8h}{}\doxysection{Reflow\+Oven/lib/matrix/seven\+Seg\+Disp.h File Reference}
+\label{seven_seg_disp_8h}\index{ReflowOven/lib/matrix/sevenSegDisp.h@{ReflowOven/lib/matrix/sevenSegDisp.h}}
+
+
+L\+IB to control the seven segment display.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{seven_seg_disp_8h_a204440c8ff69deab6ac247b465693be7}\label{seven_seg_disp_8h_a204440c8ff69deab6ac247b465693be7}} 
+\#define {\bfseries colon\+\_\+on}~(P\+O\+R\+TG $\vert$= (1$<$$<$4))
+\item 
+\mbox{\Hypertarget{seven_seg_disp_8h_ac139cde49552d15851d4bc11bd2685aa}\label{seven_seg_disp_8h_ac139cde49552d15851d4bc11bd2685aa}} 
+\#define {\bfseries colon\+\_\+off}~(P\+O\+R\+TG \&= $\sim$(1$<$$<$4))
+\item 
+\mbox{\Hypertarget{seven_seg_disp_8h_acd8c77b80c1c3c6dca738cb75f678dfb}\label{seven_seg_disp_8h_acd8c77b80c1c3c6dca738cb75f678dfb}} 
+\#define {\bfseries apostrophe\+\_\+on}~(P\+O\+R\+TG $\vert$= (1$<$$<$3))
+\item 
+\mbox{\Hypertarget{seven_seg_disp_8h_aed88425e633001a4e16bce0504b14ca3}\label{seven_seg_disp_8h_aed88425e633001a4e16bce0504b14ca3}} 
+\#define {\bfseries apostrophe\+\_\+off}~(P\+O\+R\+TG \&= $\sim$(1$<$$<$3))
+\item 
+\mbox{\Hypertarget{seven_seg_disp_8h_ab81e3847fca2f28726eba43df7e3a9cc}\label{seven_seg_disp_8h_ab81e3847fca2f28726eba43df7e3a9cc}} 
+\#define {\bfseries seg\+Enable}~(P\+O\+R\+TG $\vert$= (1$<$$<$2))
+\item 
+\mbox{\Hypertarget{seven_seg_disp_8h_a0be1fb7029a645691ac5e31808e71549}\label{seven_seg_disp_8h_a0be1fb7029a645691ac5e31808e71549}} 
+\#define {\bfseries seg\+Disable}~(P\+O\+R\+TG \&= $\sim$(1$<$$<$2))
+\item 
+\mbox{\Hypertarget{seven_seg_disp_8h_ac914965fac92a41fafe2ec27b84747f5}\label{seven_seg_disp_8h_ac914965fac92a41fafe2ec27b84747f5}} 
+\#define {\bfseries clear\+Seg}~(P\+O\+R\+TH = 0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{seven_seg_disp_8h_aecf8d9762c4dbac68bb43298394b672e}{update\+Segment}} (unsigned int seg\+Number, uint8\+\_\+t dot\+Pos)
+\begin{DoxyCompactList}\small\item\em Update the seven segment display with a number Note\+: This function takes care of the incremeting so no individual segment can be set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+L\+IB to control the seven segment display. 
+
+\begin{DoxyAuthor}{Author}
+Kenneth Mathis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\DoxyHorRuler
+ Date Vers. Name Comment/\+Change 09.\+09.\+19 1.\+0 Kenneth Mathis Created 24.\+09.\+19 1.\+1 Kenneth Mathis Added clear\+Seg 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{seven_seg_disp_8h_aecf8d9762c4dbac68bb43298394b672e}\label{seven_seg_disp_8h_aecf8d9762c4dbac68bb43298394b672e}} 
+\index{sevenSegDisp.h@{sevenSegDisp.h}!updateSegment@{updateSegment}}
+\index{updateSegment@{updateSegment}!sevenSegDisp.h@{sevenSegDisp.h}}
+\doxysubsubsection{\texorpdfstring{updateSegment()}{updateSegment()}}
+{\footnotesize\ttfamily void update\+Segment (\begin{DoxyParamCaption}\item[{unsigned int}]{seg\+Number,  }\item[{uint8\+\_\+t}]{dot\+Pos }\end{DoxyParamCaption})}
+
+
+
+Update the seven segment display with a number Note\+: This function takes care of the incremeting so no individual segment can be set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seg\+Number} & The Number to display on the segment. \\
+\hline
+{\em dot\+Pos} & The position of the dot. Set it to 4 or higher for no dot. \\
+\hline
+\end{DoxyParams}
