@@ -1,0 +1,86 @@
+\hypertarget{convert_8h}{}\doxysection{Reflow\+Oven/lib/conversions/convert.h File Reference}
+\label{convert_8h}\index{ReflowOven/lib/conversions/convert.h@{ReflowOven/lib/conversions/convert.h}}
+
+
+L\+IB to covert raw A\+DC values to more useful stuff.  
+
+
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{convert_8h_af1d464946d3d6b7c17c7c330ca8583e6}{to\+Temeperatuere}} (uint16\+\_\+t adc\+Value)
+\begin{DoxyCompactList}\small\item\em Turns a A\+DC value into its temperature equivalent. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{convert_8h_a9e52ff87f10740ec88da56c4fea38151}{to\+Voltage}} (uint16\+\_\+t adc\+Value)
+\begin{DoxyCompactList}\small\item\em Turns a A\+DC value into its Voltage equivalent. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{convert_8h_ad37bed25a61b0338453764f8670a5c07}{to\+Resistance}} (uint16\+\_\+t adc\+Value)
+\begin{DoxyCompactList}\small\item\em Determines R1 in a 10k/10k voltage divider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+L\+IB to covert raw A\+DC values to more useful stuff. 
+
+\begin{DoxyAuthor}{Author}
+Kenneth Mathis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\DoxyHorRuler
+ Date Vers. Name Comment/\+Change 17.\+09.\+19 1.\+0 Kenneth Mathis Created 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{convert_8h_ad37bed25a61b0338453764f8670a5c07}\label{convert_8h_ad37bed25a61b0338453764f8670a5c07}} 
+\index{convert.h@{convert.h}!toResistance@{toResistance}}
+\index{toResistance@{toResistance}!convert.h@{convert.h}}
+\doxysubsubsection{\texorpdfstring{toResistance()}{toResistance()}}
+{\footnotesize\ttfamily float to\+Resistance (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{adc\+Value }\end{DoxyParamCaption})}
+
+
+
+Determines R1 in a 10k/10k voltage divider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+Value} & An adc value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+R1 at A\+DC. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{convert_8h_af1d464946d3d6b7c17c7c330ca8583e6}\label{convert_8h_af1d464946d3d6b7c17c7c330ca8583e6}} 
+\index{convert.h@{convert.h}!toTemeperatuere@{toTemeperatuere}}
+\index{toTemeperatuere@{toTemeperatuere}!convert.h@{convert.h}}
+\doxysubsubsection{\texorpdfstring{toTemeperatuere()}{toTemeperatuere()}}
+{\footnotesize\ttfamily float to\+Temeperatuere (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{adc\+Value }\end{DoxyParamCaption})}
+
+
+
+Turns a A\+DC value into its temperature equivalent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+Value} & An adc value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+temperature in celsius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{convert_8h_a9e52ff87f10740ec88da56c4fea38151}\label{convert_8h_a9e52ff87f10740ec88da56c4fea38151}} 
+\index{convert.h@{convert.h}!toVoltage@{toVoltage}}
+\index{toVoltage@{toVoltage}!convert.h@{convert.h}}
+\doxysubsubsection{\texorpdfstring{toVoltage()}{toVoltage()}}
+{\footnotesize\ttfamily float to\+Voltage (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{adc\+Value }\end{DoxyParamCaption})}
+
+
+
+Turns a A\+DC value into its Voltage equivalent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+Value} & An adc value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Voltage at A\+DC. 
+\end{DoxyReturn}

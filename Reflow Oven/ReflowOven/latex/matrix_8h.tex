@@ -1,0 +1,63 @@
+\hypertarget{matrix_8h}{}\doxysection{Reflow\+Oven/lib/matrix/matrix.h File Reference}
+\label{matrix_8h}\index{ReflowOven/lib/matrix/matrix.h@{ReflowOven/lib/matrix/matrix.h}}
+
+
+L\+IB to control the mux and enable signal to the seven segment display and keypad.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{matrix_8h_a3d696a67fc1bb891753116ff9a5c4381}\label{matrix_8h_a3d696a67fc1bb891753116ff9a5c4381}} 
+\#define {\bfseries mtx\+Enable}~(P\+O\+R\+TG $\vert$= (1$<$$<$2))
+\item 
+\mbox{\Hypertarget{matrix_8h_aca31fc24a9a94250a794fa04417ed799}\label{matrix_8h_aca31fc24a9a94250a794fa04417ed799}} 
+\#define {\bfseries mtx\+Disable}~(P\+O\+R\+TG \&= $\sim$(1$<$$<$2))
+\item 
+\mbox{\Hypertarget{matrix_8h_a89ef383c67669c8bb21adb9f7bb3e99c}\label{matrix_8h_a89ef383c67669c8bb21adb9f7bb3e99c}} 
+\#define {\bfseries seg\+Sel0\+\_\+off}~(P\+O\+R\+TG \&= $\sim$(1$<$$<$0))
+\item 
+\mbox{\Hypertarget{matrix_8h_a4dd5a7e9984596527854ab265c531443}\label{matrix_8h_a4dd5a7e9984596527854ab265c531443}} 
+\#define {\bfseries seg\+Sel1\+\_\+off}~(P\+O\+R\+TG \&= $\sim$(1$<$$<$1))
+\item 
+\mbox{\Hypertarget{matrix_8h_a06c82b7286fc3f5c69bb336580ba2f4d}\label{matrix_8h_a06c82b7286fc3f5c69bb336580ba2f4d}} 
+\#define {\bfseries seg\+Sel0\+\_\+on}~(P\+O\+R\+TG $\vert$= (1$<$$<$0))
+\item 
+\mbox{\Hypertarget{matrix_8h_a787b9848613f8c4a956a552266b0570f}\label{matrix_8h_a787b9848613f8c4a956a552266b0570f}} 
+\#define {\bfseries seg\+Sel1\+\_\+on}~(P\+O\+R\+TG $\vert$= (1$<$$<$1))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{matrix_8h_a6fcd215a3988fb902b85272140f2056c}{matrix\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Preps the seven segment display and keypad for use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+L\+IB to control the mux and enable signal to the seven segment display and keypad. 
+
+\begin{DoxyAuthor}{Author}
+Kenneth Mathis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\DoxyHorRuler
+ Date Vers. Name Comment/\+Change 09.\+09.\+19 1.\+0 Kenneth Mathis Created 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{matrix_8h_a6fcd215a3988fb902b85272140f2056c}\label{matrix_8h_a6fcd215a3988fb902b85272140f2056c}} 
+\index{matrix.h@{matrix.h}!matrix\_init@{matrix\_init}}
+\index{matrix\_init@{matrix\_init}!matrix.h@{matrix.h}}
+\doxysubsubsection{\texorpdfstring{matrix\_init()}{matrix\_init()}}
+{\footnotesize\ttfamily void matrix\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Preps the seven segment display and keypad for use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Void} & \\
+\hline
+\end{DoxyParams}
